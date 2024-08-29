@@ -4,37 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
             margin: 0;
-        }
-
-        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             background-image: url('ao.png'); /* Update the path accordingly */
-            background-size: cover; /* Cover the entire area */
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Optional: Fix the background image */
+            background-attachment: fixed;
+            color: #fff;
         }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
         a {
-            color: #fb0606; /* Set a color for the link */
-            text-decoration: none; /* Remove underline from links */
+            color: #fb0606;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #fb0606;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         a:hover {
-            text-decoration: underline; /* Add underline on hover */
+            background-color: #fb0606;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Admin Office</h1>
-    
-    <p>Visit the Admin Office on <a href="https://www.google.com/maps/place/CMREC+Adminstrative+Office/@17.6017729,78.4827181,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb85ebaf32a773:0xe90deb2a6f36e3d2!8m2!3d17.601773!4d78.487589!16s%2Fg%2F11h4cfs78c?authuser=0&entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>.</p>
+    <div>
+        <h1>Welcome to the Admin Office</h1>
+        <p>Visit the Admin Office on <a href="https://www.google.com/maps/place/CMREC+Adminstrative+Office/@17.6017729,78.4827181,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb85ebaf32a773:0xe90deb2a6f36e3d2!8m2!3d17.601773!4d78.487589!16s%2Fg%2F11h4cfs78c?authuser=0&entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>.</p>
+    </div>
 </body>
 </html>

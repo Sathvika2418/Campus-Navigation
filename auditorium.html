@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auditorium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
             margin: 0;
-        }
-
-        body {
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             background-image: url('a.webp'); /* Update the path accordingly */
-            background-size: cover; /* Cover the entire area */
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Optional: Fix the background image */
+            background-attachment: fixed;
+            color: #f70404;
         }
-        
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
         a {
-            color: #f30a0a; /* Set a color for the link */
-            text-decoration: none; /* Remove underline from links */
+            color: #f30a0a;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #f30a0a;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         a:hover {
-            text-decoration: underline; /* Add underline on hover */
+            background-color: #f30a0a;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    
-    <p>Visit the Auditorium on <a href="https://www.google.com/maps/place/CMR+Central+Auditorium/@17.6020979,78.4756988,15z/data=!4m10!1m2!2m1!1scmrec+auditiroum!3m6!1s0x3bcb85f07db046ef:0x33d6846b0a7798f8!8m2!3d17.6033244!4d78.4851151!15sChBjbXJlYyBhdWRpdGlyb3VtWhIiEGNtcmVjIGF1ZGl0aXJvdW2SAQphdWRpdG9yaXVtmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5QYlc5WFRsTkJFQUXgAQA!16s%2Fg%2F11c1s4zc51?authuser=0&entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>.</p>
+    <div>
+        <h1>Welcome to the Auditorium</h1>
+        <p>Visit the Auditorium on <a href="https://www.google.com/maps/place/CMR+Central+Auditorium/@17.6020979,78.4756988,15z/data=!4m10!1m2!2m1!1scmrec+auditiroum!3m6!1s0x3bcb85f07db046ef:0x33d6846b0a7798f8!8m2!3d17.6033244!4d78.4851151!15sChBjbXJlYyBhdWRpdGlyb3VtWhIiEGNtcmVjIGF1ZGl0aXJvdW2SAQphdWRpdG9yaXVtmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5QYlc5WFRsTkJFQUXgAQA!16s%2Fg%2F11c1s4zc51?authuser=0&entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>.</p>
+    </div>
 </body>
 </html>

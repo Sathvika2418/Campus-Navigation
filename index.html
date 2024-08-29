@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
             margin: 0;
-        }
-
-        body {
+            font-family: 'Montserrat', sans-serif; /* Modern font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             background-image: url('bg.jpg'); /* Update the path accordingly */
-            background-size: cover; /* Cover the entire area */
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Optional: Fix the background image */
+            background-attachment: fixed;
+            color: #fff; /* White text color */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
         }
 
         ul {
-            list-style-type: none; /* Remove default bullets */
+            list-style-type: none;
             padding: 0;
         }
 
         li {
-            font-size: 1.5em; /* Increase the font size */
-            margin: 10px 0; /* Add spacing between list items */
+            font-size: 1.5em;
+            margin: 15px 0;
         }
 
         a {
-            text-decoration: none; /* Remove underline from links */
-            color: #040404; /* Set the text color to white or any color that contrasts well with your background */
-            font-weight: bold; /* Make the text bold */
+            text-decoration: none;
+            color: #ffffff; /* White color for links */
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #ffffff; /* Border around links */
+            border-radius: 30px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
         }
 
         a:hover {
-            color: rgb(240, 11, 11); /* Optional: Change color on hover */
+            background-color: #ffffff; /* White background on hover */
+            color: #040404; /* Dark text on hover */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to CMR Campus</h1>
-    <ul>
-        <li><a href="central library.html">Library</a></li>
-        <li><a href="auditorium.html">Auditorium</a></li>
-        <li><a href="cafeteria.html">Cafeteria</a></li>
-        <li><a href="admin office.html">Admin Office</a></li>
-    </ul>
+    <div>
+        <h1>Welcome to CMR Campus</h1>
+        <ul>
+            <li><a href="central library.html">Library</a></li>
+            <li><a href="auditorium.html">Auditorium</a></li>
+            <li><a href="cafeteria.html">Cafeteria</a></li>
+            <li><a href="admin office.html">Admin Office</a></li>
+        </ul>
+    </div>
 </body>
 </html>
