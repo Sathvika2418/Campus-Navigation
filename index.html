@@ -22,6 +22,13 @@
             color: #ffffff;
         }
 
+        .container {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
         h1 {
             font-size: 3.5em;
             margin-bottom: 30px;
@@ -34,24 +41,49 @@
         }
 
         li {
-            font-size: 1.3em;
             margin: 20px 0;
         }
 
         a {
+            display: inline-block;
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
-            padding: 12px 25px;
+            font-size: 1.3em;
+            padding: 15px 30px;
             border: 2px solid #ffffff;
-            border-radius: 25px;
+            border-radius: 50px;
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            z-index: 1;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        a:hover:before {
+            opacity: 1;
         }
 
         a:hover {
             background-color: #ffffff;
             color: #333333;
             border-color: #333333;
+        }
+
+        .icon {
+            margin-right: 10px;
         }
 
         /* Responsive design */
@@ -65,19 +97,20 @@
             }
 
             a {
-                padding: 10px 20px;
+                padding: 12px 25px;
             }
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Welcome to CMR Campus</h1>
+    <div class="container">
+        <h1>Welcome to CMREC Campus Navigation</h1>
         <ul>
-            <li><a href="central library.html">Library</a></li>
-            <li><a href="auditorium.html">Auditorium</a></li>
-            <li><a href="cafeteria.html">Cafeteria</a></li>
-            <li><a href="admin office.html">Admin Office</a></li>
+            <li><a href="admin office.html"><span class="icon">🏢</span>Admin Office</a></li>
+            <li><a href="department of cse.html"><span class="icon">💻</span>Department of CSE</a></li>
+            <li><a href="central library.html"><span class="icon">📚</span>Library</a></li>
+            <li><a href="auditorium.html"><span class="icon">🎤</span>Auditorium</a></li>
+            <li><a href="cafeteria.html"><span class="icon">☕</span>Cafeteria</a></li>
         </ul>
     </div>
 </body>
