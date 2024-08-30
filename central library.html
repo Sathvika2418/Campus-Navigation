@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central Library</title>
+    <title>Library</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-image: url('li.jpg');
+            background-image: url('li.jpg'); /* Update the path accordingly */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -26,6 +26,15 @@
             background: rgba(0, 0, 0, 0.6);
             padding: 40px;
             border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
@@ -41,25 +50,26 @@
         }
 
         a {
-            color: #fc0606;
+            color: #007bff;
             text-decoration: none;
             font-weight: bold;
-            border: 2px solid #fc0606;
+            border: 2px solid #007bff;
             padding: 10px 20px;
             border-radius: 30px;
             transition: background-color 0.3s, color 0.3s;
         }
 
         a:hover {
-            background-color: #fc0606;
+            background-color: #007bff;
             color: #fff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Central Library</h1>
-        <p>Visit the library on <a href="https://www.google.com/maps/place/JF2P%2BR97+CMREC+CENTRAL+LIBRARY/@17.6020968,78.4834082,17z/data=!4m7!3m6!1s0x3bcb85f005223e0d:0xe2b932a4960d8141!4b1!8m2!3d17.6020968!4d78.4859831!16s%2Fg%2F11gmfvnn2c?authuser=0&entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>.</p>
+        <img src="lo.png" alt="Library Header" class="header-image">
+        <h1>Welcome to the Library</h1>
+        <p>Find us on <a href="https://www.google.com/maps/place/CMR+Library/" target="_blank">Google Maps</a>.</p>
     </div>
 </body>
 </html>

@@ -14,18 +14,27 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-image: url('aud.png');
+            background-image: url('aud.png'); /* Update the path accordingly */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: #f70404;
+            color: #fff;
         }
 
         .container {
             background: rgba(0, 0, 0, 0.6);
             padding: 40px;
             border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
@@ -41,25 +50,26 @@
         }
 
         a {
-            color: #f30a0a;
+            color: #007bff;
             text-decoration: none;
             font-weight: bold;
-            border: 2px solid #f30a0a;
+            border: 2px solid #007bff;
             padding: 10px 20px;
             border-radius: 30px;
             transition: background-color 0.3s, color 0.3s;
         }
 
         a:hover {
-            background-color: #f30a0a;
+            background-color: #007bff;
             color: #fff;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="lo.png" alt="Auditorium Header" class="header-image">
         <h1>Welcome to the Auditorium</h1>
-        <p>Visit the Auditorium on <a href="https://www.google.com/maps/place/CMR+Central+Auditorium/@17.6020979,78.4756988,15z/data=!4m10!1m2!2m1!1scmrec+auditiroum!3m6!1s0x3bcb85f07db046ef:0x33d6846b0a7798f8!8m2!3d17.6033244!4d78.4851151!15sChBjbXJlYyBhdWRpdGlyb3VtWhIiEGNtcmVjIGF1ZGl0aXJvdW2SAQphdWRpdG9yaXVtmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5QYlc5WFRsTkJFQUXgAQA!16s%2Fg%2F11c1s4zc51?authuser=0&entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>.</p>
+        <p>Explore our Auditorium on <a href="https://www.google.com/maps/place/CMR+Auditorium/" target="_blank">Google Maps</a>.</p>
     </div>
 </body>
 </html>

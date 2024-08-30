@@ -29,6 +29,15 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
+        .header-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
         h1 {
             font-size: 3.5em;
             margin-bottom: 30px;
@@ -99,12 +108,17 @@
             a {
                 padding: 12px 25px;
             }
+
+            .header-image {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to CMREC Campus Navigation</h1>
+        <img src="lo.png" alt="Campus Header" class="header-image">
+        <h1>Welcome to CMR Campus</h1>
         <ul>
             <li><a href="admin office.html"><span class="icon">🏢</span>Admin Office</a></li>
             <li><a href="department of cse.html"><span class="icon">💻</span>Department of CSE</a></li>
